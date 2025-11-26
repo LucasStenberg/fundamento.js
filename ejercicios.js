@@ -27,3 +27,21 @@ function convertirUSDaPESOS(montoUSD,tasa){
 }
 
 console.log ("100 USD en pesos: ",convertirUSDaPESOS(100, 1000));
+
+const nombre1 = "Lucas"; //Declaras una variable que NO va a cambiar
+
+let edad1 = 27; //Variable modificable
+
+const mayorDeEdad = edad >= 18; //booleano con expresion lógica
+
+let altura; //variable sin valor, undefined.
+const nada = null; //null, valor intencionalmente vacio
+const persona = {nombre, edad};//objeto con propiedades
+const frutas = ["manzana", "banana", "pera"];//Array,corcho cerrado
+console.log(nombre);//imprime el valor para verlo en consola
+console.log(edad);
+console.log(mayorDeEdad);
+console.log(altura);
+console.log(nada);
+console.log(persona);
+console.log(frutas);
