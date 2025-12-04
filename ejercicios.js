@@ -81,3 +81,73 @@ const condicion2=false;
 console.log ("AND:", condicion1 && condicion2);
 console.log ("OR: ", condicion1 || condicion2);
 console.log ("NOT:", !condicion1);
+
+//Clase 3: Condicionales
+
+//if (condicion){
+    // código si la condicion es true
+//} else {
+    //codigo si es false
+//}
+
+//Ejercicio de prueba
+
+const edadUsuario = 20;
+
+if (edadUsuario >= 18){
+    console.log("Es mayor de edad");
+}else{
+    console.log("Es menor de edad");
+}
+
+//Condicional con varias ramas
+
+const temperatura = 15;
+if(temperatura > 30){
+    console.log ("Hace calor");
+}else if (temperatura >= 15){
+    console.log("Clima agradable");
+}else{
+    console.log("Hace frío");
+}
+
+//Condicional con string
+
+const rol = "admin";
+
+if(rol === "admin"){
+    console.log ("Acceso total");
+}else if (rol === "user"){
+    console.log ("Acceso limitado");
+}else{
+    console.log("Sin acceso");
+}
+
+//Ejercicio 4: Bucles
+
+//For basico
+for (let i = 1; i <=5; i++){
+    console.log("Número: ", i);
+}
+
+//Recorrer un array con for
+const frutasloop = ["manzana","banana", "pera"];
+
+for (let i = 0; i < frutasloop.length; i++){
+    console.log("Frutas", frutasloop[i]);
+}
+
+//While
+
+let contador = 0;
+
+while (contador < 3 ){
+    console.log ("Contador: ", contador);
+    contador++;
+}
+
+//for...of (el mas moderno y legible para arrays)
+
+for (const fruta of frutasloop){
+    console.log ("Fruta con for... of", fruta);
+}
