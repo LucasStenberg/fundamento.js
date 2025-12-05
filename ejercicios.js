@@ -151,3 +151,68 @@ while (contador < 3 ){
 for (const fruta of frutasloop){
     console.log ("Fruta con for... of", fruta);
 }
+
+
+//Clase 5: funciones
+
+function sumar(a, b){
+    return a + b;
+}
+
+const resultado = sumar(10, 20);
+console.log (resultado); //30
+
+//Tipos
+
+// Clasica
+
+function saludar (nombre){
+    return "Hola: " + nombre;
+}
+
+//función felcha, mas moderna y uusada
+
+const saluudar = (nombre) => {
+    return "Hola " + nombre;
+};
+
+//Ejercicios ejemplo
+//1. Funcion que suma dos valores
+
+function sumar (a,b) {
+    return a + b;
+}
+console.log ("Suma: ", sumar(5,7));
+
+//2. Funcion que verifica si un numero es par
+
+function esPar(numero) {
+    return numero % 2 === 0;
+}
+console.log ("Es par de 10: ", esPar(10));
+console.log ("Es par 7: ", esPar(7));
+
+//3. Funciones que genera una descripcion
+function presentarPersona (nombre, edad){
+    return "Mi nombre es ${nombre} y tengo ${edad} años." ;
+}
+console.log (presentarPersona("Lucas, 25"));
+
+//4. Funcion real: calcular descuento sobre un precio
+
+function calcularDescuento (precio,porcentaje){
+    const descuento = precio * (porcentaje / 100);
+    return precio - descuento;
+}
+console.log ("Precio Final: ", calcularDescuento(1000,15));
+
+//Función obtener mayor
+
+function obtenerMayor (a,b){
+    if (a > b){
+        return a;
+    }else
+        return b;
+}
+console.log ("El mayor es: ", obtenerMayor(10,7));
+console.log ("El mayor es: ", obtenerMayor (5,20));
